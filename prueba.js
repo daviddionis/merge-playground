@@ -4,6 +4,14 @@ function addTwoValues(a, b) {
     return a + b;
 }
 
+function addArrays(arr1, arr2) {
+    var result = [];
+    for (var i = 0; i < arr1.length; i++) {
+        result.push(addTwoValues(arr1[i], arr2[i]));
+    }
+    return result;
+}
+
 function multiplyArrays(arr1, arr2) {
     var result = [];
     for (var i = 0; i < arr1.length; i++) {
@@ -12,10 +20,11 @@ function multiplyArrays(arr1, arr2) {
     return result;
 }
 
-function addArrays(arr1, arr2) {
+
+function divideArrays(arr1, arr2) {
     var result = [];
     for (var i = 0; i < arr1.length; i++) {
-        result.push(addTwoValues(arr1[i], arr2[i]));
+        result.push(arr1[i] / arr2[i]);
     }
     return result;
 }
@@ -26,3 +35,5 @@ const arr2 = [4, 5, 6];
 console.log(addArrays(arr1, arr2));
 
 console.log(multiplyArrays(arr1, arr2));
+
+console.log(divideArrays(arr1, arr2));
