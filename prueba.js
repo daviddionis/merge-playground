@@ -1,5 +1,9 @@
 
 
+function addTwoValues(a, b) {
+    return a + b;
+}
+
 function multiplyArrays(arr1, arr2) {
     var result = [];
     for (var i = 0; i < arr1.length; i++) {
@@ -11,7 +15,7 @@ function multiplyArrays(arr1, arr2) {
 function addArrays(arr1, arr2) {
     var result = [];
     for (var i = 0; i < arr1.length; i++) {
-        result.push(arr1[i] + arr2[i]);
+        result.push(addTwoValues(arr1[i], arr2[i]));
     }
     return result;
 }
